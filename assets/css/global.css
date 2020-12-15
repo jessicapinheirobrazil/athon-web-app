@@ -12,7 +12,8 @@
 /* titles */
 /* font weights */
 body {
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+  background-color: #F1F9FF; }
 
 h1,
 h2,
@@ -65,21 +66,23 @@ footer {
     font-family: "Cinzel Decorative", cursive; }
 
 /* card */
-.card-date {
-  font-size: 18px;
-  color: #3C5C77;
-  line-height: 22px; }
-.card-subtitle {
-  font-size: 14px;
-  color: #3C5C77;
-  line-height: 18px; }
-.card-title {
-  color: #3C5C77;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 22px; }
-.card-icon {
-  text-align: right; }
+.card {
+  cursor: pointer; }
+  .card-date {
+    font-size: 18px;
+    color: #3C5C77;
+    line-height: 22px; }
+  .card-subtitle {
+    font-size: 14px;
+    color: #3C5C77;
+    line-height: 18px; }
+  .card-title {
+    color: #3C5C77;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px; }
+  .card-icon {
+    text-align: right; }
 
 /* pop up */
 .modal {
@@ -122,5 +125,9 @@ footer {
     .modal-image__small {
       width: 40px;
       height: 40px; }
+
+/* forms */
+.form-control {
+  border: 1px solid #BCE0FD; }
 
 /*# sourceMappingURL=global.css.map */

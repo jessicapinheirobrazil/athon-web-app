@@ -1,12 +1,3 @@
-console.log('teste');
-
-// import DateRangePicker from './node_modules/vanillajs-datepicker/js/DateRangePicker.js';
-
-// const elem = document.getElementById('daterangepicker');
-// const rangepicker = new DateRangePicker(elem, {
-//   // ...options
-// }); 
-
 /* pop up */
 
 $('#myModal').on('shown.bs.modal', function () {
@@ -26,7 +17,7 @@ function getCrimes() {
         dataType: "text",
         error: function (request, error) {
             console.log(arguments);
-            alert(" Can't do because: " + error);
+            alert("Can't do because: " + error);
         },
         success: function (request) {
             var crimeTypes = JSON.parse(request);
@@ -38,3 +29,11 @@ function getCrimes() {
         }   
     });
 }
+
+// Script do Datepicker suspenso, para questões de estudo! :D
+
+// import DateRangePicker from './node_modules/vanillajs-datepicker/js/DateRangePicker.js';
+// const elem = document.getElementById('daterangepicker');
+// const rangepicker = new DateRangePicker(elem, {
+//   // (cód.)
+// }); 

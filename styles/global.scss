@@ -28,6 +28,7 @@ $bold: 700;
 
 body {
     font-family: $montserrat;
+    background-color: $light-blue;
 }
 
 h1,
@@ -98,6 +99,8 @@ footer {
 /* card */
 
 .card {
+    cursor: pointer;
+
     &-date {
         font-size: 18px;
         color: $dark-blue;
@@ -184,4 +187,10 @@ footer {
             height: 40px;
         }
     }
+}
+
+/* forms */
+
+.form-control {
+    border: 1px solid #BCE0FD;
 }
