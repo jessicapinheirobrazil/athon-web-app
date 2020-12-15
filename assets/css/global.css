@@ -1,0 +1,126 @@
+/* imports */
+@import url("./node_modules/vanillajs-datepicker/sass/datepicker");
+@import url("./node_modules/vanillajs-datepicker/sass/datepicker-bs4");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cinzel:wght@700&family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap");
+/* fonts */
+/* colors */
+/* footer and header */
+/* background */
+/* labels */
+/* titles */
+/* font weights */
+body {
+  font-family: "Montserrat", sans-serif; }
+
+h1,
+h2,
+h3 {
+  font-family: "Cinzel", serif;
+  font-weight: normal;
+  color: #313131; }
+  h1::first-letter,
+  h2::first-letter,
+  h3::first-letter {
+    font-family: "Cinzel Decorative", cursive; }
+
+h1 {
+  font-size: 40px; }
+
+label {
+  color: #3C5C77; }
+
+footer {
+  background: #FCFC99 0% 0% no-repeat padding-box;
+  box-shadow: 0px -3px 3px #00000029;
+  position: fixed;
+  height: 60px;
+  bottom: 0;
+  width: 100%; }
+
+.navbar-yellow-custom {
+  background: #FCFC99 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 3px #00000029;
+  height: 67px;
+  padding: 0 0px 0px 2%; }
+
+.bg-color-custom {
+  background: #F1F9FF 0% 0% no-repeat padding-box; }
+
+/* buttons */
+.btn {
+  text-transform: uppercase;
+  font-family: "Cinzel", serif;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 2px 2px 3px 0px #d8dfe5; }
+  .btn-primary {
+    background: #FCFC99 0% 0% no-repeat padding-box;
+    box-shadow: -3px -3px 5px #FFFFFF4A;
+    color: #313131; }
+  .btn-secundary {
+    color: #313131; }
+  .btn-secundary::first-letter, .btn-primary::first-letter {
+    font-family: "Cinzel Decorative", cursive; }
+
+/* card */
+.card-date {
+  font-size: 18px;
+  color: #3C5C77;
+  line-height: 22px; }
+.card-subtitle {
+  font-size: 14px;
+  color: #3C5C77;
+  line-height: 18px; }
+.card-title {
+  color: #3C5C77;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px; }
+.card-icon {
+  text-align: right; }
+
+/* pop up */
+.modal {
+  font-family: "Montserrat", sans-serif; }
+  .modal-header {
+    padding: 1rem 1rem 0rem 0rem;
+    border-bottom: none; }
+  .modal-content {
+    background-color: #F1F9FF; }
+  .modal-body {
+    padding-top: 0;
+    margin-top: -2%;
+    padding: 2rem; }
+  .modal-title {
+    font-family: "Cinzel", serif;
+    font-size: 24px;
+    line-height: 17px;
+    color: #313131; }
+    .modal-title::first-letter {
+      font-family: "Cinzel Decorative", cursive; }
+  .modal-subtitle {
+    color: #3C5C77;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700; }
+    .modal-subtitle__date {
+      font-weight: 500 !important; }
+  .modal-text {
+    color: #3C5C77;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px; }
+  .modal-image {
+    width: 110px;
+    height: 110px;
+    max-width: 110px;
+    min-height: 110px;
+    border-radius: 100%;
+    background-color: #3C5C77; }
+    .modal-image__small {
+      width: 40px;
+      height: 40px; }
+
+/*# sourceMappingURL=global.css.map */

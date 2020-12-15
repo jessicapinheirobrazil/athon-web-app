@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- font awesome -->
+    <script src="https://use.fontawesome.com/8624ca3ae0.js" ></script>
+
+    <!-- other -->
+    <script src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js'></script>
+    
+
+    <!-- local files -->
+    <link rel="stylesheet" href="./assets/css/global.css">
+
+    <title>Crime Manager</title>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-yellow-custom">
+        <a class="navbar-brand" href="#">
+            <img src="./assets/svg/logo.svg" height="51" class="d-inline-block align-top" alt="">
+        </a>
+    </nav>
+
+    <!-- content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-9 mt-4">
+                <h1>Crime List</h1>
+            </div>
+            <div class="col-3 mt-4">
+                <button type="button" class="btn btn-primary">Add new crime</button>
+            </div>
+        </div>
+
+        <!-- left side (filters - text, type, order by - and search button) -->
+        <div class="row">
+            <div class="col-6">
+                <form>
+                    <div class="form-group">
+                        <label for="textfilter">Text filter</label>
+                        <input type="text" class="form-control" id="textfilter" placeholder="Search for...">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="typeofcrime"><i class="fa fa-folder-open" aria-hidden="true"></i> Type of
+                            crime</label>
+                        <select class="form-control" id="typeofcrime" name="typeofcrime">
+                            <option>All crimes</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="orderby"><i class="fa fa-sort-amount-asc" aria-hidden="true"></i> Order by</label>
+                        <select class="form-control" id="orderby">
+                            <option>Date</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </form>
+
+                <div class="w-50">
+                    <button type="button" class="btn btn-secundary w-100"><i class="fa fa-search"
+                            aria-hidden="true"></i>
+                        Buscar
+                    </button>
+                </div>
+            </div>
+
+            <!-- right site (date) -->
+            <div class="col-6">
+
+                <div id="daterangepicker">
+                    <input type="text" name="start">
+                    <span>to</span>
+                    <input type="text" name="end">
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <!-- cards list -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 mt-4">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Ideological Falsehood</h5>
+                                <p class="card-subtitle">Crime type</p>
+                                <p class="card-date">2020/07/03 - 00:00:00</p>
+                                <p class="card-subtitle">Paraguay</p>
+                                <div class="card-icon">
+                                    <a href="#"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- pop up -->
+
+    <!-- button trigger pop up -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Launch demo modal
+    </button>
+
+    <!-- pop up -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="modal-title" id="crime-title">Crime</h5>
+                    <p class="modal-subtitle mt-3 mb-2">Attempt of murder</p>
+                    <p class="modal-text">Crime type</p>
+                    <p class="modal-subtitle modal-subtitle__date mb-2">1981/10/31 - 22:33:44</p>
+                    <p class="modal-text">Godric's Hollow - England</p>
+
+                    <div class="container mt-4 pl-0 pr-0 pt-1">
+                        <div class="row">
+                            <div class="col-12">
+                                <h5 class="modal-title" id="criminal-title">Criminal</h5>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col mt-3">
+                                <figure>
+                                    <img src="" alt="Criminal's Picture" class="modal-image" />
+                                </figure>
+                            </div>
+                            <div class="col-8 mt-3">
+                                <p class="modal-subtitle modal-subtitle__date">Voldemort</p>
+                                <p class="modal-text">Criminal</p>
+                                <p class="modal-subtitle modal-subtitle__date">Dark Magic Wand</p>
+                                <p class="modal-text">Ranged Weapon</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <h5 class="modal-title" id="victim-title">Victim</h5>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col mt-3">
+                                <figure>
+                                    <img src="" alt="Victim's Picture" class="modal-image" />
+                                </figure>
+                            </div>
+                            <div class="col-8 mt-3">
+                                <p class="modal-subtitle modal-subtitle__date">Baby Potter</p>
+                                <p class="modal-text">Victim</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="container-fluid text-center navbar-fixed-bottom">
+        <div></div>
+    </footer>
+
+    <!-- javascript  -->
+    <script src="./scripts/script.js"></script>
+
+    <!-- jquery first, then popper.js, then bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
